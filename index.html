@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Todo App</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <img src="./eisenhower-matrix.jpg" alt="eisenhower-matrix" class="header__img">
+  <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+</header>
+<main class="main">
+  <section id="addelement">
+    <label for="new-task" class="title">Add Item</label>
+    <div class="addelement__input">
+      <input id="new-task" class="addelement__task" type="text">
+      <button>Add</button>
+    </div>
+  </section>
+  <section>
+    <h3 class="title">Todo</h3>
+    <ul class="block-tasks" id="incomplete-tasks">
+      <li class="block-tasks__itemns">
+        <input type="checkbox" class="block-tasks__checkbox">
+        <label class="block-tasks__item">Pay Bills</label>
+        <input type="text" class="task">
+        <button class="edit">Edit</button>
+        <button class="delete"><img src="./remove.svg" atl="img remove matrix" class="delete__img"></button>
+      </li>
+      <li class="block-tasks__itemns editmode">
+        <input type="checkbox" class="block-tasks__checkbox">
+        <label class="block-tasks__item editMode_item">Go Shopping</label>
+        <input type="text" value="Go Shopping" class="task editMode_task">
+        <button class="edit">Save</button>
+        <button class="delete"><img src="./remove.svg" alt="img remove matrix" class="delete__img"></button>
+      </li>
+    </ul>
+  </section>
+  <section>
+    <h3 class="title">Completed</h3>
+  <ul class="block-tasks" id="completed-tasks">
+    <li class="block-tasks__itemns">
+      <input type="checkbox" class="block-tasks__checkbox" checked>
+      <label class="block-tasks__item completed__item">See the Doctor</label>
+      <input type="text" class="task">
+      <button class="edit">Edit</button>
+      <button class="delete"><img src="./remove.svg" alt="img remove matrix" class="delete__img"></button>
+    </li>
+  </ul>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
